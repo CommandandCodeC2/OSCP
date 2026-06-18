@@ -1,9 +1,9 @@
 
-| Fruit | Color | Price |
-| :--- | :---: | ---: |
-| Apple | Red | $1.20 |
-| Banana | Yellow | $0.50 |
-| Blueberry | Blue | $3.00 |
+| Level | Password |
+| :--- | :---: |
+| 0| ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If |
+| 1| |
+| 2| |
 
 
 
