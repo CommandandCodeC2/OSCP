@@ -1,7 +1,10 @@
-	| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+
+| Fruit | Color | Price |
+| :--- | :---: | ---: |
+| Apple | Red | $1.20 |
+| Banana | Yellow | $0.50 |
+| Blueberry | Blue | $3.00 |
+
 
 
 ### Level 0
