@@ -7,7 +7,7 @@
 | 3| MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx |
 | 4| 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ |
 | 5| 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw |
-| 6| |
+| 6| HWasnPhtq9AVKe0dmk45nxy20cvUa6EG |
 | 7| |
 | 8| |
 | 9| |
@@ -56,6 +56,19 @@ To complete level 3 you must SSH into then bandit training area using the comman
 ### Level 4
 
 To complete level 4 you must SSH into then bandit training area using the command ```ssh bandit4@bandit.labs.overthewire.org -p 2220``` and the password from the previous problem . Once inside you will read find the password by running the command ```nano inhere/...Hiding-From-You```
+
+### Level 5
+
+To complete level 5 you must SSH into then bandit training area using the command ```ssh bandit5@bandit.labs.overthewire.org -p 2220``` and the password from the previous problem. Once inside you will find need to locate the file in the inhere directory. In order to find the file you need to run the command ``` find . -type f -size 1033c ! -executable -exec file {} + | grep -w text ``` 
+
+```find . ``` starts a search in the current directory (.) and everything beneath it, recursively.
+``` -type f```  only matches to files and not directories 
+``` - size 1033c ```: looks for files with 1033 bytes 
+``` ! -executable -exec ``` Not executable files
+``` file {} + ```: inspects the file to pull out the content types
+``` | grep -w text``` filters out only file that are text types
+
+
 
 
 
