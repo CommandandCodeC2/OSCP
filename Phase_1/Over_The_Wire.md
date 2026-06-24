@@ -8,9 +8,9 @@
 | 4| 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ |
 | 5| 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw |
 | 6| HWasnPhtq9AVKe0dmk45nxy20cvUa6EG |
-| 7| |
-| 8| |
-| 9| |
+| 7| morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj |
+| 8| dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc |
+| 9| 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM |
 | 10| |
 | 11| |
 | 12| |
@@ -67,6 +67,28 @@ To complete level 5 you must SSH into then bandit training area using the comman
 ``` ! -executable -exec ``` Not executable files
 ``` file {} + ```: inspects the file to pull out the content types
 ``` | grep -w text``` filters out only file that are text types
+
+### Level 6
+
+To complete level 6 you must SSH into then bandit training area using the command ```ssh bandit6@bandit.labs.overthewire.org -p 2220``` and the password from the previous problem. Once inside you will find need to locate the file on the server that containse the password. In order to find the file you need to run the command ``` find / -user bandit7 -size 33c -group bandit6  2>/dev/null ``` 
+
+```find / ``` starts a search in the root directory (/) and everything beneath it, recursively.
+``` -user bandit7```  only matches files that are owned by bandit7
+``` - size 33c ```: looks for files with 33 bytes
+```  -group bandit6 ```only matches files that are owned by the group bandit6
+``` 2>/dev/null ```:  Sends all routine errors (2) to the /dev/null file (a black hole)
+
+### Level 7
+
+To complete level 7 you must SSH into then bandit training area using the command ```ssh bandit7@bandit.labs.overthewire.org -p 2220``` and the password from the previous problem. Once inside you will find need to locate the file data.txt in the home directory. you will the run the command ``` grep millionth data.txt```.
+
+
+### Level 8
+
+To complete level 7 you must SSH into then bandit training area using the command ```ssh bandit8@bandit.labs.overthewire.org -p 2220``` and the password from the previous problem. Once inside you will need to locate the file data.txt in the home directory. you will the run the command ```.sort data.txt | uniq -c ```
+
+
+
 
 
 
